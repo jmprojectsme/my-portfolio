@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaymar Reperuga — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-trail"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">JM<span>.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"    onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#skills"   onclick="closeMobile()">Skills</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag fade-up" style="--d:0.1s">Self-taught Developer · Philippines 🇵🇭</div>
+    <h1 class="fade-up" style="--d:0.2s">Jaymar<br><span>Reperuga</span></h1>
+    <p class="hero-sub fade-up" style="--d:0.35s">
+      I build tools I actually use — PWA apps, web experiences,<br>and soon, Arduino-powered interfaces.
+    </p>
+    <div class="hero-btns fade-up" style="--d:0.5s">
+      <a href="#projects" class="btn-primary">See My Work</a>
+      <a href="#contact"  class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Financial grad who<br><em>fell in love with code.</em></h2>
+        <p>I started with C++ through Arduino projects, then discovered web development and never looked back. I build real tools I actually use daily — not just tutorial projects.</p>
+        <p>My approach: build something useful, find the bugs, fix them, ship it. Then make it better.</p>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-num">9+</span><span class="fact-label">GitHub Repos</span></div>
+          <div class="fact"><span class="fact-num">3</span><span class="fact-label">Live PWA Apps</span></div>
+          <div class="fact"><span class="fact-num">2+</span><span class="fact-label">Years Learning</span></div>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="card-inner">
+          <div class="about-avatar">JM</div>
+          <div class="about-info">
+            <div class="info-row"><span>📍</span> Mandaluyong, Philippines</div>
+            <div class="info-row"><span>🎓</span> Financial Management Graduate</div>
+            <div class="info-row"><span>💻</span> Self-taught Web Developer</div>
+            <div class="info-row"><span>⚙️</span> Arduino + Web IoT Enthusiast</div>
+            <div class="info-row"><span>🎵</span> Built my own music player</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">02 — Projects</div>
+    <h2 class="section-title reveal">Things I built<br><em>and actually use.</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured reveal">
+        <div class="project-visual wave-visual">
+          <div class="wave-bars">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">PWA · Music</div>
+          <h3>WavePlayer</h3>
+          <p>Personal music player I use daily instead of Spotify. Features live waveform visualizer, cassette theme, IndexedDB persistence, shuffle and repeat.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>Web Audio API</span><span>IndexedDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://jmprojectsme.github.io/Waveplayer" target="_blank" class="btn-primary small">Live App ↗</a>
+            <a href="https://github.com/jmprojectsme/Waveplayer" target="_blank" class="btn-ghost small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-visual draw-visual">
+          <div class="draw-icon">✏️</div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">PWA · Drawing</div>
+          <h3>ProDraw</h3>
+          <p>Drawing app built for Arduino and electronics drafting. Supports shapes, textures, undo/redo, dark mode and exports to PNG.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>Canvas API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://jmprojectsme.github.io/ProDraw-app-" target="_blank" class="btn-primary small">Live App ↗</a>
+            <a href="https://github.com/jmprojectsme/ProDraw-app-" target="_blank" class="btn-ghost small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-visual note-visual">
+          <div class="sticky-mini"></div>
+          <div class="sticky-mini s2"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">PWA · Productivity</div>
+          <h3>Notebook</h3>
+          <p>Personal notebook with reminders, poems section, and draggable sticky notes. Fully offline with localStorage persistence.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jmprojectsme" target="_blank" class="btn-ghost small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">03 — Skills</div>
+    <h2 class="section-title reveal">What I work with.</h2>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot"></span>HTML5</div>
+          <div class="skill-item"><span class="skill-dot"></span>CSS3</div>
+          <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+          <div class="skill-item"><span class="skill-dot"></span>C++ (Arduino)</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Web APIs</div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot"></span>Canvas API</div>
+          <div class="skill-item"><span class="skill-dot"></span>Web Audio API</div>
+          <div class="skill-item"><span class="skill-dot"></span>IndexedDB</div>
+          <div class="skill-item"><span class="skill-dot"></span>Service Workers</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Tools & Platforms</div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot"></span>GitHub</div>
+          <div class="skill-item"><span class="skill-dot"></span>GitHub Pages</div>
+          <div class="skill-item"><span class="skill-dot"></span>PWA Development</div>
+          <div class="skill-item"><span class="skill-dot"></span>Arduino IDE</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Currently Learning</div>
+        <div class="skill-items">
+          <div class="skill-item learning"><span class="skill-dot"></span>Firebase</div>
+          <div class="skill-item learning"><span class="skill-dot"></span>Supabase</div>
+          <div class="skill-item learning"><span class="skill-dot"></span>React</div>
+          <div class="skill-item learning"><span class="skill-dot"></span>IoT / Web + Arduino</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">04 — Contact</div>
+    <div class="contact-grid">
+      <div class="contact-text reveal">
+        <h2>Let's build<br><em>something together.</em></h2>
+        <p>Open for freelance projects, collaborations, or just a good conversation about code and Arduino. 😄</p>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:digicube.projects@gmail.com" class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div><div class="contact-label">Email</div><div class="contact-value">digicube.projects@gmail.com</div></div>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a href="https://github.com/jmprojectsme" target="_blank" class="contact-item">
+          <span class="contact-icon">💻</span>
+          <div><div class="contact-label">GitHub</div><div class="contact-value">github.com/jmprojectsme</div></div>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <div class="contact-item no-link">
+          <span class="contact-icon">📞</span>
+          <div><div class="contact-label">Phone</div><div class="contact-value">0967-301-9266</div></div>
+        </div>
+        <div class="contact-item no-link">
+          <span class="contact-icon">📍</span>
+          <div><div class="contact-label">Location</div><div class="contact-value">Mandaluyong, Philippines</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">JM<span>.</span></div>
+    <p>© 2026 Jaymar Reperuga · Built with HTML, CSS & JS · Deployed on GitHub Pages</p>
+    <p class="footer-sub">Self-taught · Always building · Never stopping 💪</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+  </html>
+  
